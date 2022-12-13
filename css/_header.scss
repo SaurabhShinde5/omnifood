@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary-light;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  .logo {
+    height: 2.2rem;
+  }
+  .nav {
+    .nav__list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3.2rem;
+      .nav__link {
+        &:link,
+        &:visited {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: $text-dark;
+          transition: all 0.3s;
+        }
+        &:hover,
+        &:active {
+          color: $color-primary-dark;
+        }
+      }
+      .nav__link.nav-cta {
+        &:link,
+        &:visited {
+          padding: 1.2rem 2.4rem;
+          border-radius: 9px;
+          color: $text-white;
+          background-color: $color-primary;
+        }
+        &:hover,
+        &:active {
+          background-color: $color-primary-dark;
+        }
+      }
+    }
+  }
+}

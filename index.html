@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- icon pack script -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Icon pack script -->
+
     <title>Omnifood</title>
   </head>
   <body>
@@ -57,6 +71,246 @@
               class="hero-img"
             />
           </figure>
+        </div>
+      </section>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="featured-heading">As featured in</h2>
+          <div class="logos">
+            <img
+              src="img/logos/business-insider.png"
+              alt="business-insider logo"
+            />
+            <img src="img/logos/forbes.png" alt=" forbes logo" />
+            <img src="img/logos/techcrunch.png" alt="techcrunch logo" />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="the-new-york-times logo"
+            />
+            <img src="img/logos/usa-today.png" alt="usa-today togo" />
+          </div>
+        </div>
+      </section>
+      <section class="section-how pd-96">
+        <div class="container">
+          <div class="section__header">
+            <p class="subheading">How it works</p>
+            <h2 class="heading-secondary">
+              Your daily dose of health in 3 simple steps
+            </h2>
+          </div>
+          <div class="section__wrapper">
+            <div class="section__content">
+              <div class="content__step-box">
+                <p class="step__number">01</p>
+                <h3 class="heading-tertiary">
+                  Tell us what you like (and what not)
+                </h3>
+                <p class="step__description">
+                  Never again waste time thinking about what to eat! Omnifood AI
+                  will create a 100% personalized weekly meal plan just for you.
+                  It makes sure you get all the nutrients and vitamins you need,
+                  no matter what diet you follow!
+                </p>
+              </div>
+              <figure class="section__image">
+                <img
+                  src="img/app/app-screen-1.png"
+                  alt="mobile screen showing food preference"
+                />
+              </figure>
+            </div>
+            <div class="section__content">
+              <figure class="section__image">
+                <img
+                  src="img/app/app-screen-2.png"
+                  alt="mobile screen showing food card"
+                />
+              </figure>
+              <div class="content__step-box">
+                <p class="step__number">02</p>
+                <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+                <p class="step__description">
+                  Once per week, approve the meal plan generated for you by
+                  Omnifood AI. You can change ingredients, swap entire meals, or
+                  even add your own recipes.
+                </p>
+              </div>
+            </div>
+            <div class="section__content">
+              <div class="content__step-box">
+                <p class="step__number">03</p>
+                <h3 class="heading-tertiary">
+                  Receive meals at convenient time
+                </h3>
+                <p class="step__description">
+                  Best chefs in town will cook your selected meal every day, and
+                  we will deliver it to your door whenever works best for you.
+                  You can change delivery schedule and address daily!
+                </p>
+              </div>
+              <figure class="section__image">
+                <img
+                  src="img/app/app-screen-3.png"
+                  alt="mobile screen showing delivery page"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-meals pd-96">
+        <div class="container">
+          <div class="section__header center-text">
+            <p class="subheading">meals</p>
+            <h2 class="heading-secondary">
+              Omnifood AI chooses from 5,000+ recipes
+            </h2>
+          </div>
+          <div class="section__content">
+            <div class="meal">
+              <figure>
+                <img
+                  src="img/meals/meal-1.jpg"
+                  alt="Japanese Gyozas"
+                  class="meal__img"
+                />
+              </figure>
+              <div class="meal__content">
+                <div class="meal__tags">
+                  <span class="tag tag--vegetarian">Vegetarian</span>
+                </div>
+                <p class="meal__title">Japanese Gyozas</p>
+                <ul class="meal__features">
+                  <li class="meal__attr">
+                    <ion-icon
+                      class="meal__icon"
+                      name="flame-outline"
+                    ></ion-icon>
+                    <span> <strong>650</strong> Calories</span>
+                  </li>
+                  <li class="meal__attr">
+                    <ion-icon
+                      class="meal__icon"
+                      name="restaurant-outline"
+                    ></ion-icon
+                    ><span> NutriScore &reg; <strong>74</strong> </span>
+                  </li>
+                  <li class="meal__attr">
+                    <ion-icon class="meal__icon" name="star-outline"></ion-icon
+                    ><span> <strong>4.9</strong> rating (537)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="meal">
+              <figure>
+                <img
+                  src="img/meals/meal-2.jpg"
+                  alt="Avocado Salad"
+                  class="meal__img"
+                />
+              </figure>
+              <div class="meal__content">
+                <div class="meal__tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                  <span class="tag tag--paleo">Paleo</span>
+                </div>
+                <p class="meal__title">Avocado Salad</p>
+                <ul class="meal__features">
+                  <li class="meal__attr">
+                    <ion-icon
+                      class="meal__icon"
+                      name="flame-outline"
+                    ></ion-icon>
+                    <span> <strong>400</strong> Calories</span>
+                  </li>
+                  <li class="meal__attr">
+                    <ion-icon
+                      class="meal__icon"
+                      name="restaurant-outline"
+                    ></ion-icon
+                    ><span> NutriScore &reg; <strong>92</strong> </span>
+                  </li>
+                  <li class="meal__attr">
+                    <ion-icon class="meal__icon" name="star-outline"></ion-icon
+                    ><span> <strong>4.8</strong> rating (441)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="diets">
+              <h3 class="heading-tertiary">Works with any diet:</h3>
+              <ul class="diet__list">
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Vegetarian</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Vegan</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Pescatarian</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Gluten-free</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Lactose-free</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Keto</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Paleo</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Low FODMAP</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon
+                    class="list__icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Kid-friendly</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="all-recipes">
+            <a href="#" class="link">See all recipes &rarr;</a>
+          </div>
         </div>
       </section>
     </main>

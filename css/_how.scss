@@ -1,0 +1,54 @@
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+  .section__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+    .content__step-box {
+      max-width: 50%;
+      .step__number {
+        font-size: 8.6rem;
+        font-weight: 600;
+        color: $secondary-text;
+        margin-bottom: 1.2rem;
+      }
+      .step__description {
+        font-size: 1.8rem;
+        line-height: 1.8;
+      }
+    }
+    .section__image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: -1;
+      }
+      &::before {
+        width: 90%;
+        padding-bottom: 90%;
+        background-color: $color-primary-light;
+      }
+      &::after {
+        width: 70%;
+        padding-bottom: 70%;
+        background-color: #fae5d3;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

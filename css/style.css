@@ -26,6 +26,36 @@ body {
   margin: 0 auto;
 }
 
+.btn:link, .btn:visited {
+  color: inherit;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.btn--ctc:link, .btn--ctc:visited {
+  background-color: #e67e22;
+  color: #fff;
+  margin-right: 1.6rem;
+}
+.btn--ctc:hover, .btn--ctc:active {
+  background-color: #cf711f;
+}
+
+.btn--secondary:link, .btn--secondary:visited {
+  background-color: #fff;
+  color: #555555;
+}
+.btn--secondary:active, .btn--secondary:hover {
+  background: none;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -133,32 +163,6 @@ strong {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
-}
-.section-hero .hero .btn:link, .section-hero .hero .btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.5s;
-}
-.section-hero .hero .btn--ctc:link, .section-hero .hero .btn--ctc:visited {
-  background-color: #e67e22;
-  color: #fff;
-  margin-right: 1.6rem;
-}
-.section-hero .hero .btn--ctc:hover, .section-hero .hero .btn--ctc:active {
-  background-color: #cf711f;
-}
-.section-hero .hero .btn--secondary:link, .section-hero .hero .btn--secondary:visited {
-  background-color: #fff;
-  color: #555555;
-}
-.section-hero .hero .btn--secondary:active, .section-hero .hero .btn--secondary:hover {
-  background: none;
-  box-shadow: inset 0 0 0 3px #fff;
 }
 .section-hero .hero .delivered-meals {
   display: flex;
@@ -366,4 +370,175 @@ strong {
 }
 .all-recipes .link:hover, .all-recipes .link:active {
   border-bottom: 1px solid transparent;
+}
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  background-color: #fdf2e9;
+}
+.section-testimonials .testimonials__container {
+  padding: 9.6rem;
+}
+.section-testimonials .testimonials__container .testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+.section-testimonials .testimonials__container .testimonials .testimonial .testimonial__img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.section-testimonials .testimonials__container .testimonials .testimonial .testimonial__text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.section-testimonials .testimonials__container .testimonials .testimonial .testimonial__name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+.section-testimonials .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.section-testimonials .gallery .gallery__item {
+  overflow: hidden;
+}
+.section-testimonials .gallery .gallery__item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+.section-testimonials .gallery .gallery__item img:hover {
+  transform: scale(1.1);
+}
+
+.pricing__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 6.4rem;
+       column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  margin-bottom: 4.8rem;
+}
+.pricing__container .pricing-plan {
+  border-radius: 11px;
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing__container .pricing-plan .pricing__header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing__container .pricing-plan .pricing__header .plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.pricing__container .pricing-plan .pricing__header .plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.pricing__container .pricing-plan .pricing__header .plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.pricing__container .pricing-plan .pricing__header .plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.pricing__container .pricing-plan .pricing__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.pricing__container .pricing-plan .pricing__features .list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+.pricing__container .pricing-plan .pricing__features .list-item .list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.pricing__container .pricing-plan .btn {
+  align-self: flex-end;
+  margin-top: 4.8rem;
+}
+.pricing__container .pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+.pricing__container .pricing-plan--complete {
+  background-color: #fdf2e9;
+  position: relative;
+  padding: 4.8rem;
+  overflow: hidden;
+}
+.pricing__container .pricing-plan--complete::after {
+  content: "best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  color: #333;
+  font-weight: 600;
+  transform: rotate(45deg);
+}
+
+.plan__details {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  margin-bottom: 9.6rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 6.4rem;
+       column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.features .feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.features .feature__title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.features .feature__text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }/*# sourceMappingURL=style.css.map */

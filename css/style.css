@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
 
 html {
@@ -97,6 +104,19 @@ body {
 
 strong {
   font-weight: 500;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-link:link, .footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  transition: all 0.3s;
 }
 
 .header {
@@ -541,4 +561,149 @@ strong {
 .features .feature__text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+.section-cta .cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-image: linear-gradient(to right bottom, #e67e22, #cf711f);
+  overflow: hidden;
+}
+.section-cta .cta .cta-textbox {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.section-cta .cta .cta-textbox h2 {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.section-cta .cta .cta-textbox .cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.section-cta .cta .cta-textbox .cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 3.2rem;
+       column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.section-cta .cta .cta-textbox .cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.section-cta .cta .cta-textbox .cta-form input,
+.section-cta .cta .cta-textbox .cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.section-cta .cta .cta-textbox .cta-form input::-moz-placeholder, .section-cta .cta .cta-textbox .cta-form select::-moz-placeholder {
+  color: #6f6f6f;
+}
+.section-cta .cta .cta-textbox .cta-form input:-ms-input-placeholder, .section-cta .cta .cta-textbox .cta-form select:-ms-input-placeholder {
+  color: #6f6f6f;
+}
+.section-cta .cta .cta-textbox .cta-form input::placeholder,
+.section-cta .cta .cta-textbox .cta-form select::placeholder {
+  color: #6f6f6f;
+}
+.section-cta .cta .cta-textbox .cta-form .btn {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+.section-cta .cta .cta-textbox .cta-form .btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem;
+}
+.section-cta .cta .cta-textbox .cta-form .btn--form:hover {
+  background-color: #fff;
+  color: #333;
+}
+.section-cta .cta .cta-image-box {
+  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #ddd;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  -moz-column-gap: 6.4rem;
+       column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.footer .container .logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .logo-col .footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.footer .container .logo-col .footer-logo .logo {
+  height: 2.2rem;
+}
+.footer .container .logo-col .social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  align-items: flex-start;
+}
+.footer .container .logo-col .social-links .footer-link {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #6f6f6f;
+  transition: all 0.3s;
+}
+.footer .container .logo-col .copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+  margin-top: auto;
+}
+.footer .container .contact {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.footer .container .contact .address {
+  margin-bottom: 2.4rem;
+}
+.footer .container .footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }/*# sourceMappingURL=style.css.map */

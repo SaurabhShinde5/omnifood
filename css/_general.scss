@@ -80,3 +80,17 @@
 strong {
   font-weight: 500;
 }
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.footer-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $text-lightgrey;
+    transition: all 0.3s;
+  }
+}

@@ -7,13 +7,25 @@
     align-items: center;
     justify-content: center;
     gap: 6.4rem;
+    @media screen and(max-width:544px) {
+      flex-direction: column;
+      // margin-bottom: 4.8rem;
+      gap: 1.2rem;
+    }
     .content__step-box {
       max-width: 50%;
+      @media screen and(max-width:544px) {
+        max-width: 100%;
+      }
+
       .step__number {
         font-size: 8.6rem;
         font-weight: 600;
         color: $secondary-text;
         margin-bottom: 1.2rem;
+        @media screen and(max-width:944px) {
+          font-size: 7.4rem;
+        }
       }
       .step__description {
         font-size: 1.8rem;
@@ -40,15 +52,32 @@
         width: 90%;
         padding-bottom: 90%;
         background-color: $color-primary-light;
+        @media screen and(max-width:544px) {
+          width: 70%;
+          padding-bottom: 70%;
+        }
       }
       &::after {
         width: 70%;
         padding-bottom: 70%;
         background-color: #fae5d3;
+        @media screen and(max-width:544px) {
+          width: 55%;
+          padding-bottom: 55%;
+        }
       }
       img {
         width: 50%;
+        @media screen and(max-width:544px) {
+          width: 35%;
+        }
       }
     }
+  }
+}
+
+@media screen and(max-width:544px) {
+  .content__step-box:nth-child(1) {
+    order: 2; //first step box
   }
 }

@@ -11,9 +11,18 @@
       $color-primary-dark
     );
     overflow: hidden;
+    @media screen and(max-width:992px) {
+      grid-template-columns: 3fr 2fr;
+    }
+    @media screen and(max-width:768px) {
+      grid-template-columns: 1fr;
+    }
     .cta-textbox {
       padding: 4.8rem 6.4rem 6.4rem 6.4rem;
       color: $form-text;
+      @media screen and(max-width:768px) {
+        padding: 4.8rem 3.2rem;
+      }
       h2 {
         color: inherit;
         margin-bottom: 3.2rem;
@@ -28,6 +37,9 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 3.2rem;
         row-gap: 2.4rem;
+        @media screen and(max-width:992px) {
+          grid-template-columns: 1fr;
+        }
         label {
           display: block;
           font-size: 1.6rem;
@@ -64,6 +76,9 @@
           color: $color-primary-light;
           align-self: flex-end;
           padding: 1.2rem;
+          @media screen and(max-width:992px) {
+            margin-top: 1.2rem;
+          }
           &:hover {
             background-color: $text-white;
             color: $text-dark;
@@ -80,6 +95,9 @@
         url(../img/eating.jpg);
       background-size: cover;
       background-position: center;
+      @media screen and(max-width:768px) {
+        display: none;
+      }
     }
   }
 }

@@ -3,13 +3,26 @@
   grid-template-columns: 55fr 45fr; //i.e. 55% and 45%
   align-items: center;
   background-color: $color-primary-light;
+  @media screen and(max-width:992px) {
+    grid-template-columns: 1fr;
+  }
   .testimonials__container {
     padding: 9.6rem;
+    @media screen and(max-width:1200px) {
+      padding: 9.6rem 3.2rem;
+    }
+    @media screen and(max-width:1200px) {
+      padding: 7.2rem 2.4rem;
+    }
     .testimonials {
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 4.8rem;
       column-gap: 8rem;
+      @media screen and(max-width:375px) {
+        grid-template-columns: 1fr;
+        row-gap: 4.2rem;
+      }
       .testimonial {
         .testimonial__img {
           width: 6.4rem;
@@ -33,6 +46,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
     padding: 1.6rem;
+    @media screen and(max-width:1334px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and(max-width:992px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media screen and(max-width:544px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+    }
+    @media screen and(max-width:375px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
     .gallery__item {
       overflow: hidden;
       img {

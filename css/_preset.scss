@@ -10,11 +10,22 @@
   box-shadow: 0 0 0 0.8rem rgba($color: $color-primary, $alpha: 0.5);
 }
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
+  @media screen and(max-width:1200px) {
+    font-size: 56.25%;
+  }
+  @media screen and(max-width:992px) {
+    font-size: 50%;
+  }
+  @media screen and(max-width:544px) {
+    font-size: 43.75%;
+  }
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: $text-grey;
+  overflow-x: hidden;
 }

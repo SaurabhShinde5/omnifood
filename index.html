@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- icon pack script -->
@@ -18,26 +20,32 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <!-- Icon pack script -->
+    <script defer src="js/script.js"></script>
 
     <title>Omnifood</title>
   </head>
   <body>
     <header class="header">
-      <figure>
-        <img src="img/omnifood-logo.png" alt="omnifood logo" class="logo" />
-      </figure>
+      <a href="#"
+        ><img src="img/omnifood-logo.png" alt="omnifood logo" class="logo"
+      /></a>
+
       <nav class="nav">
         <ul class="nav__list">
-          <li><a href="#" class="nav__link">How it works</a></li>
-          <li><a href="#" class="nav__link">Meals</a></li>
-          <li><a href="#" class="nav__link">Testimonials</a></li>
-          <li><a href="#" class="nav__link">Pricing</a></li>
-          <li><a href="#" class="nav__link nav-cta">Try for free</a></li>
+          <li><a href="#how" class="nav__link">How it works</a></li>
+          <li><a href="#meals" class="nav__link">Meals</a></li>
+          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li><a href="#cta" class="nav__link nav-cta">Try for free</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
@@ -48,8 +56,8 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--ctc"> Start eating healthy</a>
-            <a href="#" class="btn btn--secondary"> Learn more &darr;</a>
+            <a href="#cta" class="btn btn--ctc"> Start eating healthy</a>
+            <a href="#how" class="btn btn--secondary"> Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
                 <img src="img/customers/customer-1.jpg" alt="customer photo" />
@@ -91,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how pd-96">
+      <section class="section-how pd-96" id="how">
         <div class="container">
           <div class="section__header">
             <p class="subheading">How it works</p>
@@ -159,7 +167,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals pd-96">
+      <section class="section-meals pd-96" id="meals">
         <div class="container">
           <div class="section__header center-text">
             <p class="subheading">meals</p>
@@ -313,7 +321,7 @@
           </div>
         </div>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials__container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -443,7 +451,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing pd-96">
+      <section class="section-pricing pd-96" id="pricing">
         <div class="container">
           <div class="section__header">
             <p class="subheading">pricing</p>
@@ -569,7 +577,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-textbox">

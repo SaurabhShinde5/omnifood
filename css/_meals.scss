@@ -1,12 +1,26 @@
 .section__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 6.4rem;
+  @media screen and(max-width:768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and(max-width:544px) {
+    grid-template-columns: 1fr;
+  }
   .meal {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     overflow: hidden;
     flex: 1;
     transition: all 0.3s;
+    @media screen and(max-width:544px) {
+      // max-width: 70%;
+      margin: 0 8rem;
+    }
+    @media screen and(max-width:375px) {
+      margin: 0 2.4rem;
+    }
     &:hover {
       transform: translateY(-2rem);
       box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
@@ -16,6 +30,9 @@
     }
     .meal__content {
       padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+      @media screen and(max-width:992px) {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+      }
       .meal__tags {
         display: flex;
         gap: 0.4rem;
@@ -63,19 +80,25 @@
       }
     }
   }
-  .diet__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    .list__item {
+  .diets {
+    @media screen and(max-width:768px) {
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+    .diet__list {
+      list-style: none;
       display: flex;
+      flex-direction: column;
       gap: 1.6rem;
-      align-items: center;
-      font-size: 1.8rem;
-      .list__icon {
-        color: $color-primary;
-        font-size: 3rem;
+      .list__item {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+        font-size: 1.8rem;
+        .list__icon {
+          color: $color-primary;
+          font-size: 3rem;
+        }
       }
     }
   }
